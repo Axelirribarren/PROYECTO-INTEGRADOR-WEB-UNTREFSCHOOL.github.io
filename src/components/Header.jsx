@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Header.css';
-import logo from '../assets/img/InstitutoBlanco.png';
-import logoSmall from '../assets/img/UntrefSchool LOGO.png';
+
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +19,8 @@ const Header = () => {
         <header className="header">
             <div className="logo-container">
                 <a href="#">
-                    <img src={logo} alt="Untref School Logo" className="logo-desktop" />
-                    <img src={logoSmall} alt="Untref School Logo" className="logo-mobile" />
+                    <img src="/img/InstitutoBlanco.png" alt="Untref School Logo" className="logo-desktop" />
+                    <img src="/img/UntrefSchool LOGO.png" alt="Untref School Logo" className="logo-mobile" />
                 </a>
             </div>
 

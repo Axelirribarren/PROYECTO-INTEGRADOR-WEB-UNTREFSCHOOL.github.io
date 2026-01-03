@@ -1,11 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './About.css';
-import logo from '../assets/img/InstitutoBlanco.png';
-import icon1 from '../assets/img/icon/etiqueta1.png';
-import icon2 from '../assets/img/icon/etiqueta2.png';
-import icon3 from '../assets/img/icon/etiqueta3.png';
-import icon4 from '../assets/img/icon/etiqueta4.png';
+
 
 const About = () => {
     const containerVariants = {
@@ -24,7 +20,7 @@ const About = () => {
     return (
         <section className="about" id="equipo">
             <div className="about-header">
-                <img src={logo} alt="Untref School" className="about-logo" />
+                <img src="/img/InstitutoBlanco.png" alt="Untref School" className="about-logo" />
             </div>
 
             <div className="about-content">
@@ -49,19 +45,19 @@ const About = () => {
                     viewport={{ once: true }}
                 >
                     <motion.div className="about-card" variants={itemVariants}>
-                        <img src={icon1} alt="Trayectoria" />
+                        <img src="/img/icon/etiqueta1.png" alt="Trayectoria" />
                         <p>Sólida trayectoria en formación basada en valores.</p>
                     </motion.div>
                     <motion.div className="about-card" variants={itemVariants}>
-                        <img src={icon2} alt="Pedagogía" />
+                        <img src="/img/icon/etiqueta2.png" alt="Pedagogía" />
                         <p>Enfoque pedagógico único para cada estudiante.</p>
                     </motion.div>
                     <motion.div className="about-card" variants={itemVariants}>
-                        <img src={icon3} alt="Instalaciones" />
+                        <img src="/img/icon/etiqueta3.png" alt="Instalaciones" />
                         <p>Instalaciones de vanguardia y recursos modernos.</p>
                     </motion.div>
                     <motion.div className="about-card" variants={itemVariants}>
-                        <img src={icon4} alt="Excelencia" />
+                        <img src="/img/icon/etiqueta4.png" alt="Excelencia" />
                         <p>Educación de excelencia para un mundo cambiante.</p>
                     </motion.div>
                 </motion.div>

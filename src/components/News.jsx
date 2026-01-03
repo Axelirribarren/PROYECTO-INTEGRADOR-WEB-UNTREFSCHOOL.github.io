@@ -2,21 +2,20 @@ import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import './News.css';
-import news1 from '../assets/img/noticia1.jpg';
-import news2 from '../assets/img/noticia2.jpg';
+
 
 const News = () => {
     const newsData = [
         {
             id: 1,
             title: "Estudiantes ganan concurso de matemáticas",
-            image: news1,
+            image: "/img/noticia1.jpg",
             link: "#"
         },
         {
             id: 2,
             title: "Se celebra una jornada de lectura",
-            image: news2,
+            image: "/img/noticia2.jpg",
             link: "#"
         }
     ];
