@@ -1,0 +1,65 @@
+.proposals {
+    padding: 4rem 1rem;
+    background-color: var(--colorPrimario);
+}
+
+.proposals-header {
+    background-color: var(--colorTerciario);
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.proposals-header h1 {
+    color: var(--colorSecundario);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px var(--colorNegro);
+}
+
+.proposals-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.proposal-card {
+    background-color: var(--colorTerciario);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.proposal-card:hover {
+    border-color: var(--colorSecundario);
+}
+
+.proposal-card h2 {
+    color: var(--colorSecundario);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.proposal-card p {
+    color: var(--colorBlanco);
+    text-align: justify;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .proposals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .proposals-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

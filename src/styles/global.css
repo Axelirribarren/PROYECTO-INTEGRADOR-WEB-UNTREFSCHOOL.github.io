@@ -1,0 +1,35 @@
+:root {
+  --colorPrimario: #126481;
+  --colorSecundario: #ee8e3f;
+  --colorTerciario: #00425A;
+  --colorNegro: #181823;
+  --colorBlanco: #EFF5F5;
+  --font-main: 'Belanosima', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--colorPrimario);
+  color: var(--colorNegro);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
